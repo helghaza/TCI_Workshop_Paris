@@ -1,0 +1,84 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "SAPOrders",
+    "x-lastModified": "Nov 18, 2018 14:15PM PST"
+  },
+  "paths": {
+    "/orders": {
+      "post": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/SAPOrderResponse"
+            },
+            "examples": {
+              "application/json": {
+                "_response_string": "Created SAP Sales Order 00001113331101"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/SAPOrder"
+            }
+          }
+        ],
+        "operationId": "postOrders",
+        "consumes": [
+          "application/json"
+        ]
+      }
+    }
+  },
+  "definitions": {
+    "SAPOrder": {
+      "type": "object",
+      "properties": {
+        "item": {
+          "type": "string",
+          "default": "string"
+        },
+        "price": {
+          "type": "string",
+          "default": "string"
+        },
+        "firstName": {
+          "type": "string",
+          "default": "string"
+        },
+        "lastName": {
+          "type": "string",
+          "default": "string"
+        },
+        "phone": {
+          "type": "string",
+          "default": "string"
+        },
+        "Email": {
+          "type": "string",
+          "default": "string"
+        }
+      }
+    },
+    "SAPOrderResponse": {
+      "type": "object",
+      "properties": {
+        "_response_string": {
+          "type": "string",
+          "default": "Sales Order has been created with SalesDocumentID 000013572"
+        }
+      }
+    }
+  }
+}

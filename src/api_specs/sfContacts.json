@@ -1,0 +1,104 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "sfContacts",
+    "x-lastModified": "Nov 18, 2018 09:44AM PST"
+  },
+  "paths": {
+    "/contacts": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/sfContacts"
+            },
+            "examples": {
+              "application/json": {
+                "firstName": "first name",
+                "lastName": "last name",
+                "mobile": "6101231234",
+                "email": "jfish@acme.com",
+                "mailingStreet": "address line 1",
+                "mailingCity": "city",
+                "mailingState": "state",
+                "mailingPostalCode": "postal code"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "firstName",
+            "in": "query",
+            "description": "Contact first name",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "lastName",
+            "in": "query",
+            "description": "Contact last name",
+            "required": false,
+            "type": "string",
+            "format": ""
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "description": "Contact email",
+            "required": false,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getContacts"
+      }
+    }
+  },
+  "definitions": {
+    "sfContacts": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "default": "first name"
+        },
+        "lastName": {
+          "type": "string",
+          "default": "last name"
+        },
+        "mobile": {
+          "type": "string",
+          "default": "6101231234"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "default": "jfish@acme.com"
+        },
+        "mailingStreet": {
+          "type": "string",
+          "default": "address line 1"
+        },
+        "mailingCity": {
+          "type": "string",
+          "default": "city"
+        },
+        "mailingState": {
+          "type": "string",
+          "default": "state"
+        },
+        "mailingPostalCode": {
+          "type": "string",
+          "default": "postal code"
+        }
+      }
+    }
+  }
+}

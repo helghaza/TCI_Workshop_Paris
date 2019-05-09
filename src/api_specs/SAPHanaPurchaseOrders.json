@@ -1,0 +1,221 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "SAPHanaPurchaseOrders",
+    "x-lastModified": "Nov 18, 2018 11:33AM PST"
+  },
+  "paths": {
+    "/purchaseOrders/{orderId}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/SAPHanaPurchaseOrder"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "orderId",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "string",
+            "format": ""
+          }
+        ],
+        "operationId": "getPurchaseOrders_orderId"
+      }
+    }
+  },
+  "definitions": {
+    "SAPHanaPurchaseOrder": {
+      "type": "object",
+      "properties": {
+        "d": {
+          "type": "object",
+          "properties": {
+            "CreationDate": {
+              "type": "string"
+            },
+            "CreatedByUser": {
+              "type": "string"
+            },
+            "DistributionChannel": {
+              "type": "string"
+            },
+            "OverallSDProcessStatus": {
+              "type": "string"
+            },
+            "OverallTotalDeliveryStatus": {
+              "type": "string"
+            },
+            "SalesDistrict": {
+              "type": "string"
+            },
+            "SoldToParty": {
+              "type": "string"
+            },
+            "TotalNetAmount": {
+              "type": "string"
+            },
+            "TransactionCurrency": {
+              "type": "string"
+            },
+            "SalesOrderType": {
+              "type": "string"
+            },
+            "CustomerPurchaseOrderDate": {
+              "type": "string"
+            },
+            "OverallSDDocumentRejectionSts": {
+              "type": "string"
+            },
+            "ShippingCondition": {
+              "type": "string"
+            },
+            "IncotermsTransferLocation": {
+              "type": "string"
+            },
+            "IncotermsVersion": {
+              "type": "string"
+            },
+            "SalesOrderDate": {
+              "type": "string"
+            },
+            "__metadata": {
+              "type": "object",
+              "properties": {
+                "etag": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "uri": {
+                  "type": "string"
+                }
+              }
+            },
+            "to_Partner": {
+              "type": "object",
+              "properties": {
+                "__deferred": {
+                  "type": "object",
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "HeaderBillingBlockReason": {
+              "type": "string"
+            },
+            "SalesGroup": {
+              "type": "string"
+            },
+            "CompleteDeliveryIsDefined": {
+              "type": "boolean"
+            },
+            "SalesOrder": {
+              "type": "string"
+            },
+            "ShippingType": {
+              "type": "string"
+            },
+            "IncotermsLocation2": {
+              "type": "string"
+            },
+            "DeliveryBlockReason": {
+              "type": "string"
+            },
+            "IncotermsLocation1": {
+              "type": "string"
+            },
+            "AssignmentReference": {
+              "type": "string"
+            },
+            "OrganizationDivision": {
+              "type": "string"
+            },
+            "PurchaseOrderByCustomer": {
+              "type": "string"
+            },
+            "SalesOrganization": {
+              "type": "string"
+            },
+            "to_Item": {
+              "type": "object",
+              "properties": {
+                "__deferred": {
+                  "type": "object",
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "IncotermsClassification": {
+              "type": "string"
+            },
+            "to_PricingElement": {
+              "type": "object",
+              "properties": {
+                "__deferred": {
+                  "type": "object",
+                  "properties": {
+                    "uri": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            "SalesOffice": {
+              "type": "string"
+            },
+            "TotalCreditCheckStatus": {
+              "type": "string"
+            },
+            "CustomerPurchaseOrderType": {
+              "type": "string"
+            },
+            "PricingDate": {
+              "type": "string"
+            },
+            "CustomerPaymentTerms": {
+              "type": "string"
+            },
+            "LastChangeDate": {
+              "type": "string"
+            },
+            "SDDocumentReason": {
+              "type": "string"
+            },
+            "RequestedDeliveryDate": {
+              "type": "string"
+            },
+            "PaymentMethod": {
+              "type": "string"
+            },
+            "LastChangeDateTime": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
