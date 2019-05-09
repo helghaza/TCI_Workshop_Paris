@@ -18,25 +18,3 @@
     3. Public End Point/Postman
     4. Postman Test  
     5. Mashery Report
-
-## Sections
-
-### Getting Ready ###
-
-This section tells you what to expect in the recipe, and describes how to set up any software or any preliminary settings required for the recipe.
-
-### How to Do It... ###
-
-This section contains the steps required to follow the recipe.
-
-### How It Works... ###
-
-This section usually consists of a detailed explanation of what happened in the previous section.
-
-### There's More... ###
-
-This section consists of additional information about the recipe in order to make the reader more knowledgeable about the recipe.
-
-### See Also ###
-
-This section provides helpful links to other useful information for the recipe.
