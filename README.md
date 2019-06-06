@@ -12,9 +12,8 @@
 3. [Build and Deploy Your API](doc/002.md)
     1. BusinessWorks Application in TCI
     2. Flogo Apps in TCI
-4. Distribute & Manage your API
+4. [Distribute & Manage your API](doc/003.md)
     1. Publish to Mashery
     2. Register for an API Key  
     3. Public End Point/Postman
-    4. Postman Test  
-    5. Mashery Report
+    4. Postman Test
