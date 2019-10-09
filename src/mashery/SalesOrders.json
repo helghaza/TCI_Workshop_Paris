@@ -1,0 +1,55 @@
+{
+  "info": {
+    "description": " ",
+    "title": "SalesOrderAPI",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/sync/{orderId}": {
+      "post": {
+        "operationId": "post_sync_orderId",
+        "parameters": [
+          {
+            "description": "Request parameter",
+            "in": "path",
+            "name": "orderId",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api_key",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "properties": {
+                "_response_string": {
+                  "default": "Order has been created with SalesDocumentID 00000013572",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            },
+            "examples": {
+              "application/json": {
+                "_response_string": "Order has been created with SalesDocumentID 00000013572"
+              }
+            }
+          }
+        },
+        "summary": "Create a sales order"
+      }
+    }
+  },
+  "swagger": "2.0",
+  "host": "evalxxxxxx.api.mashery.com",
+  "schemes": [
+    "http"
+  ],
+  "basePath": "/basePath"
+}
