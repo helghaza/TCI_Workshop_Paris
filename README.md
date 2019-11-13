@@ -1,6 +1,6 @@
 # TIBCO Cloud Integration Workshop
 
- ![TIBCO Cloud](images/tci.png)
+ ![TIBCO Cloud](doc/images/tci.png)
 
 **Note**: Before you start the labs, download the repo (**Clone or download** > **Download ZIP**), and unzip it to a local directory.
 
