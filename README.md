@@ -1,6 +1,5 @@
+# ![TIBCO Cloud](doc/images/tci.jpg) 
 # TIBCO Cloud Integration Workshop
-
-# ![TIBCO Cloud](doc/images/tci.jpg) Workshop
 
 **Note**: Before you start the labs, download the repo (**Clone or download** > **Download ZIP**), and unzip it to a local directory.
 
